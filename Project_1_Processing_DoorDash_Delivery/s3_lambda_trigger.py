@@ -25,7 +25,7 @@ def lambda_handler(event, context):
     
     # Filter records with 'processed' status
     processed_records = [record for record in data if record.get('status') == 'processed']
-
+    print('hi')
     
     # Create a Pandas DataFrame
     df = pd.DataFrame(processed_records)
