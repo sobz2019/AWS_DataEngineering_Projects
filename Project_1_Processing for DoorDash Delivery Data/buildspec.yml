@@ -5,6 +5,7 @@ phases:
       python: 3.10
     commands:
       - echo "Installing dependencies..."
+      - cd Project_1_Processing for DoorDash Delivery Data
       - pip install -r requirements.txt -t lib
   build:
     commands:
