@@ -13,7 +13,8 @@ phases:
       # - cd lib
       # - zip -r9 ../deployment_package.zip .
       # - cd ..
-      - zip -g deployment_package.zip lambda_producer_airbnb_mock_gen.py
+      # - zip -g deployment_package.zip lambda_producer_airbnb_mock_gen.py
+      - zip -r deployment_package.zip lambda_producer_airbnb_mock_gen.py
   post_build:
     commands:
       - echo "Uploading to S3..."
